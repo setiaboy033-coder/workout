@@ -1,0 +1,102 @@
+* {
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+body {
+  margin: 0;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: white;
+}
+
+.app {
+  width: 900px;              /* Landscape feel */
+  max-width: 95%;
+}
+
+header {
+  margin-bottom: 15px;
+}
+
+h1 {
+  margin: 0;
+}
+
+p {
+  margin: 5px 0 10px;
+  opacity: 0.7;
+}
+
+/* Progress Bar */
+
+.progress-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.progress-bar {
+  flex: 1;
+  height: 10px;
+  background: rgba(255,255,255,0.2);
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+#progressFill {
+  height: 100%;
+  width: 0%;
+  background: #00e5ff;
+  transition: 0.3s;
+}
+
+#progressText {
+  font-size: 13px;
+  opacity: 0.9;
+}
+
+/* Card */
+
+.card {
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(10px);
+  border-radius: 18px;
+  padding: 15px;
+}
+
+/* Grid Landscape */
+
+#week {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.day {
+  background: rgba(0,0,0,0.25);
+  border-radius: 14px;
+  padding: 10px;
+}
+
+.day-title {
+  font-weight: bold;
+  font-size: 13px;
+  margin-bottom: 6px;
+}
+
+.workout {
+  display: block;
+  font-size: 12px;
+  margin: 3px 0;
+  opacity: 0.85;
+}
+
+input[type="checkbox"] {
+  margin-right: 6px;
+  transform: scale(1.1);
+  cursor: pointer;
+}
